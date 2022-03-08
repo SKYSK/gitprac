@@ -10,9 +10,17 @@
     <link rel="stylesheet" media="(max-width: 640px)" href="./css/scl_mobile.css" />
 </head>
 <body>
-    <div class="container">
+    <div class="tonecontainer">
         <p id="tone"></p>
+    </div>
+    <div class="nextcontainer">
         <button class="btn" onclick="changeTone()">NEXT</button>
+    </div>
+    <div class="modecontainer">
+        <form name="modeForm" class="inline-radio">
+            <div><input type="radio" name="mode" value="seven" ><label>7 Notes</label></div>
+            <div><input type="radio" name="mode" value="twelve" checked><label>12 Notes</label></div>
+        </form>
     </div>
 </body>
 </html>
