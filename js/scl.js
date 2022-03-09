@@ -5,10 +5,11 @@ const randomInt = (max) => { return Math.floor(Math.random() * max); }
 const randomTone = (array, num) => { return array[num]; };
 
 function changeTone() {
+    let element = document.getElementById("tone");
     if (document.modeForm.mode.value == 'seven') {
-        document.getElementById("tone").innerText = randomTone(twelveNotesArray, randomInt(7));
+        element.innerText = randomTone(sevenNotesArray, randomInt(sevenNotesArray.length));
     } else {
-        document.getElementById("tone").innerText = randomTone(twelveNotesArray, randomInt(12));
+        element.innerText = randomTone(twelveNotesArray, randomInt(twelveNotesArray.length));
     }
 }
 

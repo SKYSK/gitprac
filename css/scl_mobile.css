@@ -1,18 +1,18 @@
-.tonecontainer {
+.note-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.nextcontainer {
+.btn-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.modecontainer {
+.mode-container {
     background: #fff;
     width: 100%;
     margin: auto;
@@ -25,7 +25,7 @@
     align-items: center;
 }
 
-.btn {
+.next-btn {
     appearance: none;
     border: 0;
     border-radius: 5px;
@@ -36,16 +36,12 @@
     font-size: 30px;
 }
 
-.btn:hover {
-    background: #1d49aa;
-}
-
-.btn:focus {
+.next-btn:focus {
     outline: none;
     box-shadow: 0 0 0 4px #cbd6ee;
 }
 
-#tone {
+.tone {
     font-size: 5em;
     margin: 120px 0px;
 }
