@@ -45,29 +45,29 @@
     box-shadow: 0 0 0 4px #cbd6ee;
 }
 
-.tone {
+.note {
     font-size: 10em;
 }
 
-.inline-radio {
+.notes-select {
     display: flex;
     border-radius: 5px;
     overflow: hidden;
     border: 1px solid #b6b6b6;
 }
 
-.inline-radio div {
+.notes-select div {
     position: relative;
     flex: 1;
 }
 
-.inline-radio input {
+.notes-select input {
     width: 100px;
     height: 60px;
     opacity: 0;
 }
 
-.inline-radio label {
+.notes-select label {
     position: absolute;
     top: 0;
     left: 0;
@@ -82,17 +82,17 @@
     border-right: 1px solid #b6b6b6;
 }
 
-.inline-radio div:last-child label {
+.notes-select div:last-child label {
     border-right: 0;
 }
 
-.inline-radio input:checked+label {
+.notes-select input:checked+label {
     background: #4676D7;
     font-weight: 500;
     color: #fff;
 }
 
-.inline-radio input:not(:checked):hover+label {
+.notes-select input:not(:checked):hover+label {
     background: #d2d2d3;
     font-weight: 500;
     color: #fff;
