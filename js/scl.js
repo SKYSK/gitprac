@@ -17,6 +17,25 @@ function changeNote() {
             break;
         }
     }
+
+    fadeIn(noteElement, 300); //durationはミリ秒で指定
+}
+
+function fadeIn(node, duration) {
+
+    node.style.opacity = 0;
+    const startTime = performance.now();
+
+    requestAnimationFrame(function step(timestamp) {
+
+        const progress = (timestamp - startTime) / duration;
+
+        node.style.opacity = Math.min(progress, 1);
+
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        }
+    });
 }
 
 window.onload = changeNote;
