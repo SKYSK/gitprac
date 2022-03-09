@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,20 @@
     <link rel="stylesheet" media="(min-width: 640px)" href="./css/scl_pc.css" />
     <link rel="stylesheet" media="(max-width: 640px)" href="./css/scl_mobile.css" />
 </head>
+
 <body>
-    <div class="tonecontainer">
-        <p id="tone"></p>
+    <div class="note-container">
+        <p class="note" id="note"></p>
     </div>
-    <div class="nextcontainer">
-        <button class="btn" onclick="changeTone()">NEXT</button>
+    <div class="btn-container">
+        <button class="next-btn" onclick="changeNote()">NEXT</button>
     </div>
-    <div class="modecontainer">
-        <form name="modeForm" class="inline-radio">
-            <div><input type="radio" name="mode" value="seven" ><label>7 Notes</label></div>
-            <div><input type="radio" name="mode" value="twelve" checked><label>12 Notes</label></div>
-        </form>
+    <div class="mode-container">
+        <div class="notes-select">
+            <div><input type="radio" name="notesMode" value="seven"><label>7 Notes</label></div>
+            <div><input type="radio" name="notesMode" value="twelve" checked><label>12 Notes</label></div>
+        </div>
     </div>
 </body>
+
 </html>
