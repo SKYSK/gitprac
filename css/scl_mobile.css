@@ -1,0 +1,90 @@
+.note-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode-container {
+    background: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    min-width: 320px;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-btn {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    margin: 60px 0px;
+    padding: 16px 32px;
+    font-size: 30px;
+}
+
+.next-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+.note {
+    font-size: 5em;
+    margin: 120px 0px;
+}
+
+.notes-select {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #b6b6b6;
+}
+
+.notes-select div {
+    position: relative;
+    flex: 1;
+}
+
+.notes-select input {
+    width: 100px;
+    height: 60px;
+    opacity: 0;
+}
+
+.notes-select label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #b6b6b6;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    border-right: 1px solid #b6b6b6;
+}
+
+.notes-select div:last-child label {
+    border-right: 0;
+}
+
+.notes-select input:checked+label {
+    background: #4676D7;
+    font-weight: 500;
+    color: #fff;
+}
